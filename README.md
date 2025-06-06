@@ -70,7 +70,7 @@ A React + TypeScript application that provides an accessible, keyboard-navigable
 1. **Clone the repository:**
 
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/harut0111/autocomplete-country-search.git
    cd autocomplete
    ```
 
