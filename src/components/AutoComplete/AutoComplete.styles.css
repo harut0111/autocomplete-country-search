@@ -1,0 +1,100 @@
+.autocomplete-container {
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  position: relative;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.autocomplete-title {
+  font-size: 1.8em;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.autocomplete-description {
+  font-size: 0.75em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.autocomplete-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.autocomplete-input:focus {
+  border-color: #3b82f6;
+}
+
+.autocomplete-input.loading {
+  cursor: progress;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='20' fill='none' stroke='%23333' stroke-width='5' stroke-linecap='round' stroke-dasharray='100' stroke-dashoffset='60'%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.7s' repeatCount='indefinite' /%3E%3C/circle%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.autocomplete-suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.autocomplete-suggestion {
+  padding: 12px 15px;
+  margin-top: 2p;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.15s ease-in-out;
+  font-size: 0.95em;
+  color: #374151;
+}
+
+.autocomplete-suggestion:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #f3f4f6;
+}
+
+.autocomplete-suggestion.highlighted {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.autocomplete-suggestion strong {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.autocomplete-no-match {
+  padding: 12px 15px;
+  color: #6b7280;
+  font-style: italic;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  margin-top: 5px;
+}
